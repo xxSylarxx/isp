@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?= $dataEmpresa['metades'] ?>">
-    <title><?= mb_strtoupper($dataEmpresa['nombre'], 'UTF-8') ?></title>
+    <title>ISP</title>
     <link rel="shortcut icon" href="./public/img/icons/escudo.png" type="image/png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="./public/css/animate.min.css">
