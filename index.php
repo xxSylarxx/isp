@@ -127,21 +127,21 @@
                 height: 100%;
             }
         </style>
-        <div class="modal" id="modalAdmin" tabindex="-1" aria-hidden="true">
+      <!--   <div class="modal" id="modalAdmin" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
-                <div class="modal-content animate__animated <?= $dataModal['animation'] ?>" style="<?= ($dataModal['margen'] == 'N' && $dataModal['header'] == 'N') ? 'background: transparent; border: none;' : null ?>">
-                    <?php if ($dataModal['header'] == 'S') { ?>
+                <div class="modal-content animate__animated <//?= $dataModal['animation'] ?>" style="<//?= ($dataModal['margen'] == 'N' && $dataModal['header'] == 'N') ? 'background: transparent; border: none;' : null ?>">
+                    <//?php if ($dataModal['header'] == 'S') { ?>
                         <div class="modal-header border-0">
-                            <h5 class="modal-title fw-bold"><?= $dataModal['titulo'] ?></h5>
+                            <h5 class="modal-title fw-bold"><//?= $dataModal['titulo'] ?></h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                    <?php } ?>
-                    <div class="modal-body <?= $dataModal['margen'] == 'N' ? 'p-0' : null ?>">
-                        <?= $dataModal['cuerpo'] ?>
+                    <//?php } ?>
+                    <div class="modal-body <//?= $dataModal['margen'] == 'N' ? 'p-0' : null ?>">
+                        <//?= $dataModal['cuerpo'] ?>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <script>
             // instancia y muestra la ventana
             let modalAdmin = new bootstrap.Modal(document.getElementById('modalAdmin'));
