@@ -1,15 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 :root {
-  --color1: #1a201f;
-  --color2: #539b23;
+  --color1: #01358B;
+  --color2: #0BC6F3;
   --color3: #ff933a;
   --color4: #5a688f;
+  --color5: white;
+  --color6: rgba(11, 198, 243,0.5);
+  
   --fontsize: 15.5px;
 }
 
 body {
-  font-family: "Exo 2", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: var(--fontsize);
   background-color: #ffffff;
   color: #1a1a1a;
@@ -26,7 +32,7 @@ h3 {
 }
 
 #header nav.navbar {
-  background-color: var(--color1);
+  background-color: var(--color5);
   min-height: 90px;
 }
 
@@ -40,6 +46,7 @@ h3 {
   padding-top: 10px;
   padding-bottom: 10px;
   text-transform: uppercase;
+  color: var(--color1);
 }
 
 #header a.nav-link.active {

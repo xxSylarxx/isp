@@ -51,8 +51,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container ps-0">
             <a class="navbar-brand fs-4 fw-bold" style="letter-spacing: .08em;" href="/">
-                <img src="./public/img/icons/escudo.png" height="55">
-                <span>sadasdsad</span>
+                <img src="./public/img/icons/escudo_isp.png" height="55">
+              <!--   <span>sadasdsad</span> -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
@@ -65,32 +65,30 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/">Nosotros</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Servicios</a>
-                    </li>
-                    <li id="barra-menu-responsive" class="nav-item" onmouseover="showMenuHover(0)" onmouseout="showMenuHover2(0)">
-                        <a class="nav-link" href="#" id="navbarDropdown">
-                            Submenú <i class="fas fa-caret-down"></i>
-                        </a>
-                        <ul id="menu-responsive" class="dropdown-menu animate__animated animate__fadeInUp" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="./talleres.php">Talleres</a>
-                            <li> <a class="dropdown-item py-2">Servicios&raquo; </a>
-                                <ul class="submenu dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> Psicología</a></li>
-                                    <li><a class="dropdown-item" href="#"> Tópico</a></li>
-
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item" onmouseover="showMenuHover(2)" onmouseout="showMenuHover2(2)">
+                    <li class="nav-item" onmouseover="showMenuHover(0)" onmouseout="showMenuHover2(0)">
                         <a class="nav-link" href="/publicaciones/all" id="navbarDropdown">
-                            Publicaciones &nbsp;<i class="fas fa-chevron-down" style="font-size:12px;"></i>
+                            Carreras &nbsp;<i class="fas fa-chevron-down" style="font-size:12px;"></i>
                         </a>
                         <ul class="dropdown-menu animate__animated animate__fadeInUp" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item py-2" href="/publicaciones/noticias">Noticias</a></li>
                             <li><a class="dropdown-item py-2" href="/publicaciones/documentos">Documentos</a></li>
                         </ul>
+                    </li>
+                  
+                    <li class="nav-item" onmouseover="showMenuHover(1)" onmouseout="showMenuHover2(1)">
+                        <a class="nav-link" href="/publicaciones/all" id="navbarDropdown">
+                            Cursos &nbsp;<i class="fas fa-chevron-down" style="font-size:12px;"></i>
+                        </a>
+                        <ul class="dropdown-menu animate__animated animate__fadeInUp" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item py-2" href="/publicaciones/noticias">Noticias</a></li>
+                            <li><a class="dropdown-item py-2" href="/publicaciones/documentos">Documentos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Transparencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Noticias</a>
                     </li>
                     <li class="nav-item me-0">
                         <a class="nav-link round" href="/">Contacto</a>
