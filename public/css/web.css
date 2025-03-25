@@ -5,13 +5,14 @@
 
 :root {
   --color1: #01358B;
+  --color1: rgb(1, 53, 139);
   --color2: #0BC6F3;
   --color3: #ff933a;
   --color4: #5a688f;
   --color5: white;
   --color6: rgba(11, 198, 243,0.5);
   
-  --fontsize: 15.5px;
+  --fontsize: 16px;
 }
 
 body {
@@ -25,6 +26,9 @@ h1,
 h2,
 h3 {
   font-weight: bold;
+}
+h2{
+  font-size: 2.5rem;
 }
 
 #header {
@@ -69,6 +73,21 @@ h3 {
   background-color: var(--color2);
   color: white;
 }
+/* Estilos de botones */
+.btn {
+  background-color: var(--color1);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn:hover {
+  color: var(--color5);
+}
+
 
 @media screen and (max-width: 1000px) {
   #header nav.navbar {

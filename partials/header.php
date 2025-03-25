@@ -63,7 +63,7 @@
                         <a class="nav-link active" href="/">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Nosotros</a>
+                        <a class="nav-link" href="./nosotros.php">Nosotros</a>
                     </li>
                     <li class="nav-item" onmouseover="showMenuHover(0)" onmouseout="showMenuHover2(0)">
                         <a class="nav-link" href="/publicaciones/all" id="navbarDropdown">
