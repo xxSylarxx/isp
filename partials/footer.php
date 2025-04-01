@@ -75,7 +75,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="m-5">
-                            <h3>Proceso de admisión </h3>
+                            <h3 style="color:var(--color1);">Proceso de admisión </h3>
                             <p> Descubre nuestras opciones de admisión y selecciona <br> la que mejor se ajuste a ti.</p>
                             <br>
                             <div class="col-lg  d-flex justify-content-start">

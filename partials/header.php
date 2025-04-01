@@ -1,14 +1,15 @@
 <style>
-    
-    .nav-item{
+    .nav-item {
         padding-left: 1rem;
     }
+
     .navbar-dark .navbar-toggler {
         border-color: var(--color1);
         background-color: var(--color1);
     }
-     /* ============ desktop view ============ */
-     @media all and (min-width: 992px) {
+
+    /* ============ desktop view ============ */
+    @media all and (min-width: 992px) {
         .dropdown-menu li {
             position: relative;
         }
@@ -52,7 +53,7 @@
         <div class="container ps-0">
             <a class="navbar-brand fs-4 fw-bold" style="letter-spacing: .08em;" href="/">
                 <img src="./public/img/icons/escudo_isp.png" height="55">
-              <!--   <span>sadasdsad</span> -->
+                <!--   <span>sadasdsad</span> -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
@@ -60,22 +61,28 @@
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="/">Inicio</a>
+                        <a class="nav-link active" href="./">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./nosotros.php">Nosotros</a>
                     </li>
-                    <li class="nav-item" onmouseover="showMenuHover(0)" onmouseout="showMenuHover2(0)">
-                        <a class="nav-link" href="/publicaciones/all" id="navbarDropdown">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./carreras.php">Carreras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cursos.php">Cursos</a>
+                    </li>
+                    <!--  <li class="nav-item" onmouseover="showMenuHover(0)" onmouseout="showMenuHover2(0)">
+                        <a class="nav-link" href="#" id="navbarDropdown">
                             Carreras &nbsp;<i class="fas fa-chevron-down" style="font-size:12px;"></i>
                         </a>
                         <ul class="dropdown-menu animate__animated animate__fadeInUp" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item py-2" href="/publicaciones/noticias">Noticias</a></li>
+                            <li><a class="dropdown-item py-2" href="/publicaciones/noticias">Administración</a></li>
                             <li><a class="dropdown-item py-2" href="/publicaciones/documentos">Documentos</a></li>
                         </ul>
-                    </li>
-                  
-                    <li class="nav-item" onmouseover="showMenuHover(1)" onmouseout="showMenuHover2(1)">
+                    </li> -->
+
+                    <!-- <li class="nav-item" onmouseover="showMenuHover(1)" onmouseout="showMenuHover2(1)">
                         <a class="nav-link" href="/publicaciones/all" id="navbarDropdown">
                             Cursos &nbsp;<i class="fas fa-chevron-down" style="font-size:12px;"></i>
                         </a>
@@ -83,15 +90,15 @@
                             <li><a class="dropdown-item py-2" href="/publicaciones/noticias">Noticias</a></li>
                             <li><a class="dropdown-item py-2" href="/publicaciones/documentos">Documentos</a></li>
                         </ul>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Transparencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Transparencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Noticias</a>
+                        <a class="nav-link" href="./noticias.php">Noticias</a>
                     </li>
                     <li class="nav-item me-0">
-                        <a class="nav-link round" href="/">Contacto</a>
+                        <a class="nav-link round" href="./contacto.php">Contacto</a>
                     </li>
                 </ul>
             </div>
