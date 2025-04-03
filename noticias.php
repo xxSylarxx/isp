@@ -24,8 +24,8 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script async src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
+    <script async src="./public/js/popper.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
 
 
     <?php include_once 'partials/header.php'; ?>
@@ -210,12 +210,12 @@
                                     </div>
 
                                     <div class="detalle">
-                                        Comunicado importante del Instituto Sistemas Perú.
+                                        Comunicado importante del Instituto Sistemas Perú, sobre el proceso de titulación
                                     </div>
 
                                 </div>
 
-                                <div class="card-footer text-info d-flex justify-content-center">
+                                <div class="card-footer text-info d-flex justify-content-center align-items-center my-auto">
 
                                     <a href="view.php?id=1">Ver más&nbsp;&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                                 </div>
@@ -227,7 +227,7 @@
                         <a href="view.php?id=2">
                             <div class="card shadow-sm h-100" style="background: rgb(248, 248, 248);">
                                 <span class="news">Noticias</span>
-                                <img src="./public/img/galeria/noticia1.jpg" width="100%" height="300">
+                                <img src="./public/img/galeria/noticia2.jpg" width="100%" height="300">
 
                                 <div class="card-body">
 
@@ -248,7 +248,7 @@
 
                                 </div>
 
-                                <div class="card-footer text-info d-flex justify-content-center">
+                                <div class="card-footer text-info d-flex justify-content-center align-items-center my-auto">
 
                                     <a href="view.php?id=2">Ver más&nbsp;&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                                 </div>
@@ -257,33 +257,34 @@
                         </a>
                     </div>
                     <div class="col-md-4 px-3 my-3">
-                        <a href="view.php?id=1">
+                        <a href="view.php?id=3">
                             <div class="card shadow-sm h-100" style="background: rgb(248, 248, 248);">
                                 <span class="news">Noticias</span>
-                                <img src="./public/img/galeria/noticia1.jpg" width="100%" height="300">
+                                <img src="./public/img/galeria/noticia3.jpg" width="100%" height="300">
 
                                 <div class="card-body">
 
                                     <div class="row ">
                                         <div class="">
                                             <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-                                            <span class="ms-2">18-03-2025</span>
+                                            <span class="ms-2">01-04-2025</span>
                                         </div>
                                         <div class="pt-3">
-                                            <h5 class="fw-bold text-uppercase" style="font-size: 18px;color:var(--color9);">COMUNICADO</h5>
+                                            <h5 class="fw-bold text-uppercase" style="font-size: 18px;color:var(--color9);">TALLER DE PODCAST</h5>
                                         </div>
 
                                     </div>
 
                                     <div class="detalle">
-                                        Comunicado importante del Instituto Sistemas Perú.
+                                    Llegó nuestro Taller de Podcast para todos nuestra familia de comunicaciones.
+                                    Inscripciones  abiertas !!!!
                                     </div>
 
                                 </div>
 
-                                <div class="card-footer text-info d-flex justify-content-center">
+                                <div class="card-footer text-info d-flex justify-content-center align-items-center my-auto">
 
-                                    <a href="view.php?id=1">Ver más&nbsp;&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                                    <a href="view.php?id=3">Ver más&nbsp;&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                                 </div>
 
                             </div>
@@ -356,7 +357,7 @@
     <!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    -->
-    <script src="./assets/js/hubslider.min.js"></script>
+    <script src="./public/js/hubslider.min.js"></script>
     <script>
         $('.hub-slider-slides ul').hubSlider({
             selector: $('li'),

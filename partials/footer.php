@@ -79,7 +79,13 @@
                             <p> Descubre nuestras opciones de admisión y selecciona <br> la que mejor se ajuste a ti.</p>
                             <br>
                             <div class="col-lg  d-flex justify-content-start">
-                                <a class="btn" href="">Ver Más&nbsp;&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                                <a class="btn" href="javascript:void(0);" onclick="openRegisterModal()">Ver Más&nbsp;&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                                <script>
+                            function openRegisterModal() {
+                                var registerModal = new bootstrap.Modal(document.getElementById('registerModal'));
+                                registerModal.show();
+                            }
+                        </script>
                             </div>
                         </div>
                     </div>
@@ -108,6 +114,29 @@
                   <div class="col-lg-2"><i class="fab fa-facebook-f"></i></div>
                   <div class="col-lg-2"><i class="fab fa-facebook-f"></i></div>
               </div>-->
+              <div class="d-flex justify-content-center">
+                   <!--  <div class="col-lg-2">
+                        <div style="border-radius:50%;background: var(--color2);width:40px;height:40px;padding-top:4px;">
+                            <a href="https://www.instagram.com/berkeleyschoolperu?igsh=ZGV0cWtvNXUyamln" style="color:var(--color1);font-size:20px;" target="_blank">
+                                <center><i class="fab fa-instagram"></i></center>
+                            </a>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-2">
+                        <div style="border-radius:50%;background:white;width:40px;height:40px;padding-top:4px;">
+                            <a href="https://www.facebook.com/ISPinstituto/" style="color:var(--color1);font-size:20px;" target="_blank">
+                                <center><i class="fab fa-facebook"></i></center>
+                            </a>
+                        </div>
+                    </div>
+                   <!--  <div class="col-lg-2">
+                        <div style="border-radius:50%;background: var(--color2);width:40px;height:40px;padding-top:4px;">
+                            <a href="https://www.linkedin.com/company/berkeley-school/?trk=ppro_cprof&amp;originalSubdomain=pe" style="color:var(--color1);font-size:20px;" target="_blank">
+                                <center><i class="fab fa-linkedin"></i></center>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
                 <br>
 
             </div>
@@ -158,15 +187,15 @@
                     <br>
                     <a href="/entrada/complex-security">
                         <div class="row d-flex justify-content-around">
-                            <div class="col-lg-5"><img src="https://sapiensconsultingperu.com//assets/img/galeria/security.jpg" style="border-radius:5px;" class="img-fluid" alt=""></div>
-                            <div class="col-lg-7 my-auto"><span style="color:var(--color5);">NOTICIA 1</span></div>
+                            <div class="col-lg-5"><img src="./public/img/galeria/noticia1.jpg" style="border-radius:5px;object-fit:cover;height:100px;width:100%;object-position:top;" class="img-fluid" alt=""></div>
+                            <div class="col-lg-7 my-auto"><span style="color:var(--color5);">COMUNICADO</span></div>
                         </div>
                     </a>
                     <hr style="color:Var(--color2);">
                     <a href="/entrada/examination-and-document-exchange-platfo">
                         <div class="row d-flex justify-content-around">
-                            <div class="col-lg-5"><img src="https://sapiensconsultingperu.com//assets/img/galeria/examination.jpg" style="border-radius:5px;" class="img-fluid" alt=""></div>
-                            <div class="col-lg-7 my-auto"><span style="color:var(--color5);">NOTICIA 2</span></div>
+                            <div class="col-lg-5"><img src="./public/img/galeria/noticia2.jpg" style="border-radius:5px;object-fit:cover;height:100px;width:100%;object-position:top;" alt=""></div>
+                            <div class="col-lg-7 my-auto"><span style="color:var(--color5);">CONVENIO CON LA RED DE PARÁMEDICOS DEL PERÚ </span></div>
                         </div>
                     </a>
                     <hr style="color:Var(--color2);">

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./public/css/animate.min.css">
     <link rel="stylesheet" href="./public/css/bootstrap.min.css">
     <link rel="stylesheet" href="./public/css/web.css">
+    <link rel="stylesheet" href="./portadas-cursos/pcurso<?php echo $_GET['id']; ?>.css">
     <!-- owl -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -25,7 +26,6 @@
     <script src="./public/js/popper.min.js"></script>
 
     <style>
-
         .button5 {
             background-color: var(--color1);
             border: none;
@@ -100,6 +100,36 @@
         strong {
             font-weight: bold;
         }
+
+        #lema {
+            /*   background: url('./public/img/galeria/capacitacion2.jpg'); */
+            /* background-attachment: fixed; */
+            background-size: 100%;
+            background-position: center 10%;
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+            color: white;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        #lema::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            /* Black filter with 50% opacity */
+            z-index: 1;
+        }
+
+        #lema>* {
+            position: relative;
+            z-index: 2;
+        }
+
         .sticky-col {
             position: sticky;
             top: 120px;
@@ -117,16 +147,38 @@
     <?php include_once 'partials/header.php'; ?>
 
 
-    <!-- <section class="container-fluid portada px-0">
-        <div class="titleContainer">
-            <div class="animate__animated animate__fadeInLeft">
-                <h2 class="title1">
-                    Inicial
+    <section class="container-fluid" id="lema">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-9 text-center">
+
+                <h2 class="mb-4" style="letter-spacing: 1px;">
+                    <?php
+                    switch ($_GET['id']) {
+                        case '1':
+                            echo 'PERIODISMO DEPORTIVO';
+                            break;
+                        case '2':
+                            echo 'LOCUCIÓN RADIAL Y TELEVISIVA';
+                            break;
+                        case '3':
+                            echo 'COMUNICACIÓN AUDIOVISUAL';
+                            break;
+                        case '4':
+                            echo 'PERIODISMO RADIAL Y TELEVISIVO';
+                            break;
+                        default:
+                            echo 'CURSOS';
+                            break;
+                    }
+
+                    ?>
                 </h2>
+
             </div>
         </div>
-        <img src="./public/img/web/inicial-portada.jpg" alt="">
-    </section> -->
+    </section>
 
 
     <section class="container lista">
@@ -138,9 +190,9 @@
         </div> -->
         <div class="row justify-content-between mt-4" style="padding-top: 3rem; padding-bottom: 7rem;">
             <div class="col-md-8">
-                <?php include_once './noticias/noticia' . $_GET['id'] . '.php' ?>
+                <?php include_once './cursos/curso' . $_GET['id'] . '.php' ?>
                 <div class="col-md text-center pt-5">
-                    <a href="./noticias.php"><button class="button5">Ver Más</button></a>
+                    <a href="./cursos.php"><button class="button5">Ver Más</button></a>
                 </div>
 
             </div>

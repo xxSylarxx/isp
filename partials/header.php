@@ -8,6 +8,34 @@
         background-color: var(--color1);
     }
 
+    .modal-content {
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    .modal-header {
+        border-bottom: none;
+        text-align: center;
+    }
+
+    .modal-title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .form-control,
+    .form-select {
+        border-radius: 10px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        background-color: var(--color1);
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+    }
+
     /* ============ desktop view ============ */
     @media all and (min-width: 992px) {
         .dropdown-menu li {
@@ -98,13 +126,101 @@
                         <a class="nav-link" href="./noticias.php">Noticias</a>
                     </li>
                     <li class="nav-item me-0">
-                        <a class="nav-link round" href="./contacto.php">Contacto</a>
+
+                        <a class="nav-link round" href="javascript:void(0);" onclick="openRegisterModal()">Contacto</a>
+                        <script>
+                            function openRegisterModal() {
+                                var registerModal = new bootstrap.Modal(document.getElementById('registerModal'));
+                                registerModal.show();
+                            }
+                        </script>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header d-flex flex-column">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="registerModalLabel">Regístrate aquí</h5>
+                <p>En breve, un profesional te contactará.</p>
+               
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Nombre(s)" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Apellido paterno" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Apellido materno" required>
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-select" required>
+                                <option selected>DNI</option>
+                                <option>Pasaporte</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Nro. de documento" required>
+                        </div>
+                        <!-- <div class="col-md-6">
+                                <select class="form-select" required>
+                                    <option selected>Departamento (*)</option>
+                                </select>
+                            </div> -->
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Celular" required>
+                        </div>
+                        <!-- <div class="col-md-6">
+                                <select class="form-select" required>
+                                    <option selected>Año de estudio (*)</option>
+                                </select>
+                            </div>-->
+                        <div class="col-md-6">
+                            <select class="form-select" required>
+                                <option selected disabled>Carrera de interés (*)</option>
+                                <option value="ingenieria_sistemas">Administración de Empresas</option>
+                                <option value="administracion">Locución Radial y Televisiva</option>
+                                <option value="contabilidad">Comunicación Audiovisual</option>
+                                <option value="derecho">Periodismo Radial y Televisivo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <label class="form-check-label">Declaro haber leído la <a href="#">Política de Privacidad</a></label>
+                        <input type="checkbox" class="form-check-input" required>
+                    </div>
+                    <div class="mt-3">
+                        <label class="form-check-label">Acepto que mi información personal se use para los fines complementarios que se describen en la Política de Privacidad.</label>
+                        <div>
+                            <input type="radio" name="autorizacion" class="form-check-input" required> Sí
+                            <input type="radio" name="autorizacion" class="form-check-input" required> No
+                        </div>
+                    </div>
+                    <!-- <div class="mt-3">
+                        <label class="form-check-label">Consiento en que Instituto ISP comunique mis datos personales a terceros.</label>
+                        <div>
+                            <input type="radio" name="transferencia" class="form-check-input" required> Sí
+                            <input type="radio" name="transferencia" class="form-check-input" required> No
+                        </div>
+                    </div> -->
+                    <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
     var height = document.getElementById('header').clientHeight;
     document.querySelector('body').style.paddingTop = height + "px";

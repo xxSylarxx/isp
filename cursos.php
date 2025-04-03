@@ -24,8 +24,8 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script async src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
+    <script async src="./public/js/popper.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
 
 
     <?php include_once 'partials/header.php'; ?>
@@ -237,63 +237,15 @@
                     <div class="carreras_slider">
                         <div class="content-carrera-curso">
                             <div class="ccarrera-curso-img">
-                                <img src="./public/img/galeria/pc_admin_empresas.jpg" alt="">
+                                <img src="./public/img/galeria/curso1.jpg" alt="">
                             </div>
                             <div class="ccarrera-curso-cuerpo p-4">
-                                <h3 class="text-center" style="color:var(--color1);">Administración de Empresas</h3>
+                                <h3 class="text-center" style="color:var(--color1);">Periodismo Deportivo</h3>
 
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem minima laborum debitis reiciendis! Rerum, officiis? Suscipit officia nemo soluta numquam, repellendus ex, quae rerum voluptatum esse corrupti vel, culpa unde.</p>
+                                <p>El periodismo deportivo es una especialización del periodismo que se enfoca en la cobertura de eventos deportivos, atletas y temas relacionados con el deporte. </p>
                                 <br>
                                 <div class="col-lg  d-flex justify-content-center">
-                                    <a class="btn" href="">Ver Más&nbsp;&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carreras_slider">
-                        <div class="content-carrera-curso">
-                            <div class="ccarrera-curso-img">
-                                <img src="./public/img/galeria/pc_locucion.jpg" alt="">
-                            </div>
-                            <div class="ccarrera-curso-cuerpo p-4">
-                                <h3 class="text-center" style="color:var(--color1);">Locución Radial y Televisiva</h3>
-
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam dolores beatae corporis reiciendis harum numquam, suscipit eveniet! Explicabo, est libero, nam facilis odit ex cum autem a, expedita commodi tempora.</p>
-                                <br>
-                                <div class="col-lg  d-flex justify-content-center">
-                                    <a class="btn" href="">Ver Más&nbsp;&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carreras_slider">
-                        <div class="content-carrera-curso">
-                            <div class="ccarrera-curso-img">
-                                <img src="./public/img/galeria/pc_audiovisial.jpg" alt="">
-                            </div>
-                            <div class="ccarrera-curso-cuerpo p-4">
-                                <h3 class="text-center" style="color:var(--color1);">Comunicación Audiovisual</h3>
-
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ullam odio iste voluptate accusantium dolores non unde, nemo nostrum, ipsa consequatur ab enim voluptas cum architecto. Porro esse temporibus dolores!.</p>
-                                <br>
-                                <div class="col-lg  d-flex justify-content-center">
-                                    <a class="btn" href="">Ver Más&nbsp;&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carreras_slider">
-                        <div class="content-carrera-curso">
-                            <div class="ccarrera-curso-img">
-                                <img src="./public/img/galeria/pc_periodismo.jpg" alt="">
-                            </div>
-                            <div class="ccarrera-curso-cuerpo p-4">
-                                <h3 class="text-center" style="color:var(--color1);">Periodismo Radial y Televisivo</h3>
-
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sunt libero provident, doloribus illum in tempora velit fuga consectetur est doloremque facilis illo numquam corrupti, laudantium veniam a consequatur. Facilis?</p>
-                                <br>
-                                <div class="col-lg  d-flex justify-content-center">
-                                    <a class="btn" href="">Ver Más&nbsp;&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                                    <a class="btn" href="./view3.php?id=1">Ver Más&nbsp;&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -361,7 +313,7 @@
     <!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    -->
-    <script src="./assets/js/hubslider.min.js"></script>
+    <script src="./public/js/hubslider.min.js"></script>
     <script>
         $('.hub-slider-slides ul').hubSlider({
             selector: $('li'),
