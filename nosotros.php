@@ -38,10 +38,11 @@
     <!-- ventana emergente admin -->
 
     <style>
-        #lema{
+        #lema {
             padding-top: 7rem;
             padding-bottom: 2rem;
         }
+
         .subcontainer {
             background: rgb(0 0 0 / 10%);
             position: absolute;
@@ -180,7 +181,13 @@
             width: 50% !important;
         }
 
-
+        #mision-vision img {
+            position: absolute;
+            width: 45%;
+            bottom: 0%;
+            left: -4%;
+            object-fit: cover;
+        }
 
 
         @media screen and (max-width: 500px) {
@@ -188,6 +195,26 @@
 
             .portada img {
                 height: 30vh;
+            }
+        }
+
+        @media screen and (max-width: 1400px) {
+
+
+            .portada img {
+                height: 30vh;
+            }
+
+            #mision-vision img {
+                width: 35%;
+
+            }
+            #mision{
+                padding-top:5rem;
+            }
+         
+            #vision{
+                padding-top:15rem;
             }
         }
     </style>
@@ -214,7 +241,7 @@
             <img src="./public/img/portadas/pi_nosotros.jpg" width="100%" height="600">
         </div>
 
-     
+
         <section id="lema">
             <div class="container">
                 <div class="row">
@@ -227,10 +254,10 @@
 
         <section id="mision-vision" style="padding-top: 6rem;">
             <div class="container-fluid" style="padding-left: 5%;padding-right: 5%;">
-                <div class="row">
-                    <div class="col-lg-6">
+                <div class="row d-flex justify-content-center">
+                    <div id="mision" class="col-xxl-6 col-lg-11">
                         <div class="mx-4  h-100" style="background: url('./public/img/web/bg-mision-vision.jpg') no-repeat center center; background-size: cover;position:relative;border-radius:20px;">
-                            <img src="./public/img/web/mision-p.png" alt="" style="position: absolute;width:45%;bottom:0%;left:-4%;object-fit: cover;">
+                            <img src="./public/img/web/mision-p.png" alt="">
                             <div class="row d-flex justify-content-center">
                                 <div class="col-lg-5 ">
 
@@ -244,9 +271,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div id="vision" class="col-xxl-6 col-lg-11">
                         <div class="mx-4  h-100" style="background: url('./public/img/web/bg-mision-vision.jpg') no-repeat center center; background-size: cover;position:relative;border-radius:20px;">
-                            <img src="./public/img/web/vision-p.png" alt="" style="position: absolute;width:45%;bottom:0%;left:-4%;object-fit: cover;">
+                            <img src="./public/img/web/vision-p.png" alt="">
                             <div class="row">
                                 <div class="col-lg-5 ">
 
